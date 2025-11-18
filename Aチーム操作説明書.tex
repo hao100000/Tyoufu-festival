@@ -1,0 +1,116 @@
+\documentclass[a4paper,12pt]{jarticle}%articleをjarticleにすると,figure1が図1になる
+%\documentclass[dvipdfmx]{jlreq}
+
+\usepackage{amsmath,amssymb}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{geometry}
+\geometry{top=20mm,bottom=20mm,left=15mm,right=15mm}
+\usepackage{float}% "H" = ここに図を強制的に配置,を使えるようにする
+\usepackage{caption}%図や表の外の環境でcaptionを使うためのパッケージ(minipageで混ぜる時用)
+% \usepackage{hyperref}%\refでクリックできるリンクがつくらしい(?)
+% \usepackage{url} %URLを入れる用
+
+\usepackage[hyphens]{url}
+\usepackage{ruby}
+
+
+\title{Aチーム\ruby{操作}{そうさ}\ruby{説明書}{せつめいしょ}}
+\date{}
+% 最初のページだけ消したい場合
+
+
+\begin{document}
+\maketitle
+\thispagestyle{empty} %ページ番号を消す
+
+
+\vspace{-0.5cm}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\linewidth]{UI_2.png}
+    \label{fig:1}
+\end{figure}
+
+\vspace{1cm}
+\noindent
+\begin{minipage}{0.48\textwidth}
+    \begin{minipage}{0.15\textwidth}
+        \includegraphics[width=\linewidth]{UI_2_左上_1.png}
+    \end{minipage}
+    \begin{minipage}{0.8\textwidth}
+        \large アームAが\ruby{上下}{じょうげ}に\ruby{動}{うご}く。
+    \end{minipage}
+\end{minipage}
+\hfill
+\begin{minipage}{0.48\textwidth}
+    \begin{minipage}{0.15\textwidth}
+        \includegraphics[width=\linewidth]{UI_2_右上.png}
+    \end{minipage}
+    \begin{minipage}{0.8\textwidth}
+        \large アームBが\ruby{上下}{じょうげ}に\ruby{動}{うご}く。
+    \end{minipage}
+\end{minipage}
+
+
+\vspace{0.5cm}
+\noindent
+\begin{minipage}{0.48\textwidth}
+    \begin{minipage}{0.15\textwidth}
+        \includegraphics[width=\linewidth]{UI_2_左上_2.png}
+    \end{minipage}
+    \begin{minipage}{0.8\textwidth}
+        \large アームAが\ruby{開閉}{かいへい}する。
+    \end{minipage}
+\end{minipage}
+\hfill
+\begin{minipage}{0.48\textwidth}
+    \begin{minipage}{0.15\textwidth}
+        \includegraphics[width=\linewidth]{UI_2_左上_2.png}
+    \end{minipage}
+    \begin{minipage}{0.8\textwidth}
+        \large アームBが\ruby{開閉}{かいへい}する。
+    \end{minipage}
+\end{minipage}
+
+
+
+
+
+\vspace{2cm}
+\hspace{0.7cm}
+\begin{minipage}{0.4\textwidth}
+    \includegraphics[width=\linewidth]{UI_2_真ん中.png}
+\end{minipage}
+\begin{minipage}{0.8\textwidth}
+    \large\hspace{0.8cm}ロボットが\ruby{前後}{ぜんご}\ruby{左右}{さゆう}に\ruby{動}{うご}く。
+\end{minipage}
+
+
+
+
+
+
+\vspace{2cm}
+\noindent
+\begin{minipage}{0.48\textwidth}
+    \begin{minipage}{0.15\textwidth}
+        \includegraphics[width=\linewidth]{UI_2_左下.png}
+    \end{minipage}
+    \begin{minipage}{0.8\textwidth}
+        \large ロボットが90\textdegree\ruby{左回転}{ひだりかいてん}する。
+    \end{minipage}
+\end{minipage}
+\hfill
+\begin{minipage}{0.48\textwidth}
+    \begin{minipage}{0.15\textwidth}
+        \includegraphics[width=\linewidth]{UI_2_右下.png}
+    \end{minipage}
+    \begin{minipage}{0.8\textwidth}
+        \large ロボットが90\textdegree\ruby{右回転}{みぎかいてん}する。
+    \end{minipage}
+\end{minipage}
+
+
+
+
+\end{document}
